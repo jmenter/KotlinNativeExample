@@ -29,6 +29,11 @@ kotlin {
     sourceSets["androidMain"].dependencies {
         implementation("org.jetbrains.kotlin:kotlin-stdlib")
     }
+
+}
+
+dependencies {
+    commonMainImplementation("io.ktor:ktor-client-core:1.3.1")
 }
 
 val packForXcode by tasks.creating(Sync::class) {
